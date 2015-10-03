@@ -17,12 +17,13 @@ MH.config(function($stateProvider, $urlRouterProvider) {
     .state("properties", {
         url: "/properties",
         templateUrl: "/static/partials/properties.html",
-        controller: 'PropertiesCtrl'
+        controller: "PropertiesCtrl"
       }
     )
     .state('properties.detail', {
       url: "/properties/:propId",
-      templateUrl: "/static/partials/property-detail.html"
+      templateUrl: "/static/partials/property-detail.html",
+      controller: "PropertyDetailsCtrl"
     })
     .state('properties.filter', {
       url: "/properties/filter",

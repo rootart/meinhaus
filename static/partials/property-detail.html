@@ -1,6 +1,12 @@
 <div class="property-calculations">
   <div class="wrap">
-    Calculations askdfj
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquid delectus dolorem facere, hic ipsam libero magnam maiores minima minus nam nemo perferendis quam qui quibusdam quisquam sapiente tempore.</p>
-  </div>
+  <ul>
+  <li ng-repeat="image in propObj.pictures">
+    <a ng-click="openLightboxModal($index)">
+      <img width="100px" height="100px" ng-src="{[ image ]}" class="img-thumbnail">
+    </a>
+  </li>
+</ul>
+  <div class="description" ng-bind-html-unsafe="propObj.adDescription"></div>
+</div>
 </div>

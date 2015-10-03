@@ -14,6 +14,15 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/api/real-estates/<objectId>')
+def api_object_details(objectId):
+    headers = {
+        'auth': HOMEGATE_AUTH_KEY
+    }
+    url = 'https://api-2445581357976.apicast.io:443/rs/real-estates/{}'.format(objectId);
+    return jsonify(**requests.get(url, headers=headers).json())
+
+
 @app.route('/api/<zip_code>/<price>/<assets>/<salary>/<age>/')
 @cached()
 def api(zip_code, price, assets, salary, age):
@@ -25,6 +34,7 @@ def api(zip_code, price, assets, salary, age):
     }
     url = 'https://api-2445581357976.apicast.io:443/rs/real-estates?language=en&chooseType=purchfaofh&sort=p&numberResults=100&zip={}&objectType=APPT'.format(zip_code);
     return jsonify(**requests.get(url, headers=headers).json())
+
 
 @app.route('/base/<path:filename>')
 def base_static(filename):
