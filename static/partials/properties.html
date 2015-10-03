@@ -1,16 +1,17 @@
 <section id="two">
-	<h2>Recent Work</h2>
-	<div class="row" >
-		<article class="6u 12u$(xsmall) work-item" ng-repeat="propObj in prop.items">
-			<a href="" class="image fit thumb">
-				<span class="affordability-value-img affordable" ng-class="">33%</span>
-				<img ng-src="{{ propObj.pictures[0] }}" alt="" />
-			</a>
-			<h3>Magna sed consequat tempus</h3>
-			<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-		</article>
-	</div>
-	<ul class="actions">
-		<li><a href="#" class="button">Full Portfolio</a></li>
-	</ul>
+  <h2>Suggested properties</h2>
+  <div class="row">
+    <article ng-repeat="propObj in prop.items" class="6u 12u$(xsmall) work-item">
+      <a
+          ui-sref="properties.detail({'propId': propObj.advertismentId})"
+          class="image fit thumb">
+        <span class="affordability-value-img affordable" ng-class="">33%</span>
+        <img ng-src="{{ propObj.pictures[0] }}" alt="" />
+      </a>
+
+      <h3>{{ propObj.title }}</h3>
+      <p>{{ propObj.zip }} {{ propObj.city }}, {{ propObj.countryLabel }}</p>
+    </article>
+  </div>
+  <div ui-view></div>
 </section>
