@@ -27,8 +27,8 @@
 
           $scope.calculateAffordability = function(propObj){
             var cost = $scope.amortAmount(propObj) + $scope.maintCost(propObj) + $scope.interestValue(propObj);
-            return parseFloat((cost/$scope.filters.salary).toFixed(2));
-          }
+            return parseFloat( Math.round((cost/$scope.filters.salary)*100 ).toFixed(2) );
+          };
 
        }
 

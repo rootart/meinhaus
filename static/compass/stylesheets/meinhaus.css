@@ -24,7 +24,7 @@
   color: #494d41;
   padding: 0.1em 1.5em 3em 1.5em !important;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
-  background: #E5E1D9;
+  background: #f0f0f0;
 }
 
 /* line 34, ../sass/_header.scss */
@@ -60,6 +60,22 @@
   background: #fff;
   border: 1px solid lightgray;
 }
+/* line 14, ../sass/_customer-details.scss */
+.customer-details .btn-default {
+  color: #494d41 !important;
+}
+/* line 16, ../sass/_customer-details.scss */
+.customer-details .btn-default:active {
+  color: #494d41 !important;
+}
+/* line 19, ../sass/_customer-details.scss */
+.customer-details .btn-default:focus {
+  color: #494d41 !important;
+}
+/* line 22, ../sass/_customer-details.scss */
+.customer-details .btn-default:hover {
+  color: #494d41 !important;
+}
 
 /* line 1, ../sass/_properties.scss */
 .image {
@@ -68,6 +84,17 @@
 /* line 3, ../sass/_properties.scss */
 .image img {
   border-radius: 2px;
+}
+/* line 7, ../sass/_properties.scss */
+.image .desc {
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  padding: 2px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 0.85em;
 }
 
 /*.affordability-value-img {
@@ -81,17 +108,17 @@
   margin-left: -22px;
   padding: 1px 0;
 }*/
-/* line 18, ../sass/_properties.scss */
+/* line 30, ../sass/_properties.scss */
 .affordable {
   background: #789e56;
 }
 
-/* line 22, ../sass/_properties.scss */
-.not-affordable {
+/* line 34, ../sass/_properties.scss */
+.noaffordable {
   background: #e63232;
 }
 
-/* line 27, ../sass/_properties.scss */
+/* line 39, ../sass/_properties.scss */
 .affordability-value-img {
   position: absolute;
   width: 100%;
@@ -102,9 +129,28 @@
   color: white;
 }
 
+/* line 49, ../sass/_properties.scss */
+.percent {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0.9em;
+  font-style: normal;
+}
+
 /* line 1, ../sass/_main-content.scss */
 .main-content {
-  padding-top: 1.5em !important;
+  padding-top: 0.5em !important;
+}
+
+/* line 4, ../sass/_main-content.scss */
+.main-title {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+/* line 9, ../sass/_main-content.scss */
+.sub-title {
+  margin-bottom: 0.5em !important;
 }
 
 /* line 11, ../sass/_wipe.scss */

@@ -3,6 +3,18 @@
   img {
     border-radius: 2px;
   }
+  
+  .desc {
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    padding: 2px;
+    box-sizing: border-box;
+
+    background: rgba(#000, 0.1);
+    color: #fff;
+    font-size: 0.85em;
+  }
 }
 /*.affordability-value-img {
   font-size: 1.4em;
@@ -19,7 +31,7 @@
   //color: $color-moneypark-green;
   background: $color-moneypark-green;
 }
-.not-affordable {
+.noaffordable {
   //color: $color-homegate-red;
   background: $color-homegate-red;
 }
@@ -33,4 +45,10 @@
   text-align: left;
   padding: 2px 2%;
   color: rgb(255, 255, 255);
+}
+.percent {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0.9em;
+  font-style: normal;
 }
