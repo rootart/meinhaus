@@ -14,16 +14,16 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/api')
+@app.route('/api/<zip_code>/<price>/<assets>/<salary>/<age>/')
 @cached()
-def api():
+def api(zip_code, price, assets, salary, age):
     """
     Basic API proxy handler
     """
     headers = {
         'auth': HOMEGATE_AUTH_KEY
     }
-    url = 'https://api-2445581357976.apicast.io:443/rs/real-estates?language=en&chooseType=purchfaofh&sort=p&numberResults=50';
+    url = 'https://api-2445581357976.apicast.io:443/rs/real-estates?language=en&chooseType=purchfaofh&sort=p&numberResults=100&zip={}&objectType=APPT'.format(zip_code);
     return jsonify(**requests.get(url, headers=headers).json())
 
 @app.route('/base/<path:filename>')

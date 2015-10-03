@@ -7,11 +7,10 @@
           class="image fit thumb">
 		  <div class="affordability-value-img affordable">
 			  <span>Affordability = </span>
-			  <span>33%</span>
+			  <span ng-bind="calculateAffordability(propObj)"></span>
 		  </div>
         <!--<span class="affordability-value-img affordable" ng-class="">33%</span>-->
-        <img ng-src="{[ propObj.pictures[0] ]}" alt="" />
-
+        <img ng-src="{[ propObj.pictures[0] ]}" alt=""/>
       </a>
 
       <h3>{[ propObj.title ]}</h3>
