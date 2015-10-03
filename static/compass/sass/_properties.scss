@@ -1,0 +1,20 @@
+.image {
+  border-radius: 12px;
+}
+.affordability-value-img {
+  font-size: 1.4em;
+  position: absolute;
+  left: 0;
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  min-width: 44px;
+  text-align: center;
+  margin-left: -22px;
+  padding: 1px 0;
+}
+.affordable {
+  color: $color-moneypark-green;
+}
+.not-affordable {
+  color: $color-homegate-red;
+}

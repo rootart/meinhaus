@@ -9,11 +9,44 @@
   background: linear-gradient(to bottom, #789e56 0, #789e56 25%, #698a4b 100%);
 }
 
-/* line 1, ../sass/_header.scss */
+/* line 9, ../sass/_header.scss */
+.background-header {
+  background-color: #f0f0f0;
+  background: linear-gradient(#f0f0f0, #106cc8);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f0f0f0), color-stop(1, #d6d6d6));
+  background: -webkit-linear-gradient(top, #f0f0f0 0%, #d6d6d6);
+  background: -moz-linear-gradient(top, #f0f0f0 0%, #d6d6d6 100%);
+  background: linear-gradient(top, #f0f0f0 0%, #d6d6d6 100%);
+}
+
+/* line 18, ../sass/_header.scss */
 .header {
-  background: #fff;
   color: #494d41;
-  border-right: 2px dotted #efefef;
+  padding: 1.5em 1.5em 3em 1.5em !important;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  background: #f0f0f0;
+}
+
+/* line 32, ../sass/_header.scss */
+.logo {
+  margin: 0 0 1em 0;
+}
+
+/* line 36, ../sass/_header.scss */
+.logo-title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5em;
+  display: none;
+}
+
+/* line 43, ../sass/_header.scss */
+.home-icon {
+  font-size: 2em !important;
+  color: #789e56;
+  margin: 0 0.1em 0 0;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* line 2, ../sass/_customer-details.scss */
@@ -21,6 +54,44 @@
   font-size: 1em;
   margin-bottom: 0.7em;
   color: #494d41;
+}
+/* line 8, ../sass/_customer-details.scss */
+.customer-details .form-control {
+  background: #fff;
+  border: 1px solid lightgray;
+}
+
+/* line 1, ../sass/_properties.scss */
+.image {
+  border-radius: 12px;
+}
+
+/* line 4, ../sass/_properties.scss */
+.affordability-value-img {
+  font-size: 1.4em;
+  position: absolute;
+  left: 0;
+  border-radius: 2px;
+  background-color: white;
+  min-width: 44px;
+  text-align: center;
+  margin-left: -22px;
+  padding: 1px 0;
+}
+
+/* line 15, ../sass/_properties.scss */
+.affordable {
+  color: #789e56;
+}
+
+/* line 18, ../sass/_properties.scss */
+.not-affordable {
+  color: #e63232;
+}
+
+/* line 1, ../sass/_main-content.scss */
+.main-content {
+  padding-top: 1.5em !important;
 }
 
 /* line 1, ../sass/components/_nouslider.scss */

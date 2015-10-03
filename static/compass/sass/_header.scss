@@ -1,6 +1,50 @@
+//.background-header {
+//   background-color: rgb(16, 108, 200);
+//   background: linear-gradient(rgb(24, 86, 148), rgb(16, 108, 200));
+//   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(24, 86, 148)), color-stop(1, rgb(16, 108, 200)));
+//   background: -webkit-linear-gradient(top, rgb(24, 86, 148) 0%, rgb(16, 108, 200) 100%);
+//   background: -moz-linear-gradient(top, #185694 0%, #106cc8 100%);
+//   background: linear-gradient(top, #185694 0%, #106cc8 100%);
+// }
+.background-header {
+  background-color: rgb(240, 240, 240);
+  background: linear-gradient(rgb(240, 240, 240), rgb(16, 108, 200));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(240, 240, 240)), color-stop(1, darken(rgb(240, 240, 240),10)));
+  background: -webkit-linear-gradient(top, rgb(240, 240, 240) 0%, darken(rgb(240, 240, 240), 10) );
+  background: -moz-linear-gradient(top, rgb(240, 240, 240) 0%, darken(rgb(240, 240, 240), 10) 100%);
+  background: linear-gradient(top, rgb(240, 240, 240) 0%, darken(rgb(240, 240, 240), 10)100%);
+}
+
 .header {
-  background: #fff;
+  //background: #fff;
   //text-align: left;
   color: $color-font;
-  border-right: 2px dotted $color-border;
+  //border-right: 2px dotted $color-border;
+
+  padding: 1.5em 1.5em 3em 1.5em !important;
+
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+
+  background: rgb(240, 240, 240);
+  //@extend .background-header;
+}
+
+.logo {
+  margin: 0 0 1em 0;
+
+}
+.logo-title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5em;
+
+  display: none;
+}
+.home-icon {
+  font-size: 2em !important;
+  color: $color-moneypark-green;
+  margin: 0 0.1em 0 0;
+
+  display: inline-block;
+  vertical-align: middle;
 }

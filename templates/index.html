@@ -10,9 +10,6 @@
 
 		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}">
 		<link rel="stylesheet" href="{{ url_for('static', filename='compass/stylesheets/meinhaus.css') }}">
-		<!--components-->
-
-
 
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/ie8.css') }}" /><![endif]-->
 		<!--[if lte IE 8]><script src="{{ url_for('static', filename='assets/js/ie/html5shiv.js') }}"></script><![endif]-->
@@ -23,9 +20,9 @@
 			<header id="header" class="header">
 
 				<div class="customer-details">
-					<div>
-						test
-						<i class="fa fa-home"></i>
+					<div class="logo">
+						<i class="fa fa-home home-icon"></i>
+						<span class="logo-title">MeinHaus</span>
 					</div>
 					<form action="">
 						<div class="form-group">
@@ -55,24 +52,24 @@
 			</header>
 
 		<!-- Main -->
-			<div id="main">
+			<div id="main" class="main-content">
 
 
 
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>Ipsum lorem dolor aliquam ante commodo<br />
-							magna sed accumsan arcu neque.</h2>
+							<h2>test<br />
+							test</h2>
 						</header>
-						<p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
+						<p>test</p>
 						<ul class="actions">
 							<li><a href="#" class="button">Learn More</a></li>
 						</ul>
 					</section>
 
 				<!-- Two -->
-         <div ui-view></div>
+                <div ui-view></div>
 
 				<!-- Three -->
 					<section id="three">
