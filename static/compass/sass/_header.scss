@@ -21,16 +21,21 @@
   color: $color-font;
   //border-right: 2px dotted $color-border;
 
-  padding: 1.5em 1.5em 3em 1.5em !important;
+  padding: 0.1em 1.5em 3em 1.5em !important;
 
   box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
 
-  background: rgb(240, 240, 240);
+  //background: rgb(240, 240, 240);
   //@extend .background-header;
+
+  background: #E5E1D9;
 }
 
 .logo {
-  margin: 0 0 1em 0;
+  margin: 0 0 0 -1.4em;
+  //position: absolute;
+  //left: 0;
+  //top: 0;
 
 }
 .logo-title {

@@ -22,17 +22,17 @@
 /* line 18, ../sass/_header.scss */
 .header {
   color: #494d41;
-  padding: 1.5em 1.5em 3em 1.5em !important;
+  padding: 0.1em 1.5em 3em 1.5em !important;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
-  background: #f0f0f0;
+  background: #E5E1D9;
 }
 
-/* line 32, ../sass/_header.scss */
+/* line 34, ../sass/_header.scss */
 .logo {
-  margin: 0 0 1em 0;
+  margin: 0 0 0 -1.4em;
 }
 
-/* line 36, ../sass/_header.scss */
+/* line 41, ../sass/_header.scss */
 .logo-title {
   display: inline-block;
   vertical-align: middle;
@@ -40,7 +40,7 @@
   display: none;
 }
 
-/* line 43, ../sass/_header.scss */
+/* line 48, ../sass/_header.scss */
 .home-icon {
   font-size: 2em !important;
   color: #789e56;
@@ -63,44 +63,155 @@
 
 /* line 1, ../sass/_properties.scss */
 .image {
-  border-radius: 12px;
+  border-radius: 2px;
+}
+/* line 3, ../sass/_properties.scss */
+.image img {
+  border-radius: 2px;
 }
 
-/* line 4, ../sass/_properties.scss */
-.affordability-value-img {
+/*.affordability-value-img {
   font-size: 1.4em;
   position: absolute;
   left: 0;
   border-radius: 2px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   min-width: 44px;
   text-align: center;
   margin-left: -22px;
   padding: 1px 0;
-}
-
-/* line 15, ../sass/_properties.scss */
-.affordable {
-  color: #789e56;
-}
-
+}*/
 /* line 18, ../sass/_properties.scss */
-.not-affordable {
-  color: #e63232;
+.affordable {
+  background: #789e56;
 }
 
 /* line 22, ../sass/_properties.scss */
-.test {
+.not-affordable {
+  background: #e63232;
+}
+
+/* line 27, ../sass/_properties.scss */
+.affordability-value-img {
   position: absolute;
   width: 100%;
+  box-sizing: border-box;
+  font-size: 1.1em;
   text-align: left;
-  padding: 0 2%;
+  padding: 2px 2%;
   color: white;
 }
 
 /* line 1, ../sass/_main-content.scss */
 .main-content {
   padding-top: 1.5em !important;
+}
+
+/* line 11, ../sass/_wipe.scss */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 23, ../sass/_wipe.scss */
+html {
+  height: 100vh;
+  font-size: 100%;
+}
+
+/* line 28, ../sass/_wipe.scss */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 32, ../sass/_wipe.scss */
+.wipe {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 50vw;
+  height: 50vh;
+  padding: 20px;
+  transition: all 0.25s;
+}
+/* line 41, ../sass/_wipe.scss */
+.wipe:after {
+  position: absolute;
+  z-index: 9;
+  content: "";
+  transition: all 0.25s;
+}
+/* line 50, ../sass/_wipe.scss */
+.wipe.wipe-down:after, .wipe.wipe-up:after {
+  left: 0;
+  width: 100%;
+  height: 0;
+}
+/* line 59, ../sass/_wipe.scss */
+.wipe.wipe-left:after, .wipe.wipe-right:after {
+  top: 0;
+  width: 0;
+  height: 100%;
+}
+/* line 66, ../sass/_wipe.scss */
+.wipe.wipe-down {
+  background-color: #5d8da8;
+}
+/* line 69, ../sass/_wipe.scss */
+.wipe.wipe-down:after {
+  top: 0;
+  background-color: #3a5769;
+}
+/* line 75, ../sass/_wipe.scss */
+.wipe.wipe-left {
+  background-color: #45b29d;
+}
+/* line 78, ../sass/_wipe.scss */
+.wipe.wipe-left:after {
+  right: 0;
+  background-color: #2d7365;
+}
+/* line 84, ../sass/_wipe.scss */
+.wipe.wipe-right {
+  background-color: #efc94c;
+}
+/* line 87, ../sass/_wipe.scss */
+.wipe.wipe-right:after {
+  left: 0;
+  background-color: #b09438;
+}
+/* line 93, ../sass/_wipe.scss */
+.wipe.wipe-up {
+  background-color: #df5a49;
+}
+/* line 96, ../sass/_wipe.scss */
+.wipe.wipe-up:after {
+  bottom: 0;
+  background-color: #9e4134;
+}
+/* line 102, ../sass/_wipe.scss */
+.wipe:hover:after {
+  width: 100%;
+  height: 100%;
+}
+/* line 107, ../sass/_wipe.scss */
+.wipe .wipe-show {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 99;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
 }
 
 /* line 1, ../sass/components/_nouslider.scss */

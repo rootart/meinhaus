@@ -1,7 +1,10 @@
 .image {
-  border-radius: 12px;
+  border-radius: 2px;
+  img {
+    border-radius: 2px;
+  }
 }
-.affordability-value-img {
+/*.affordability-value-img {
   font-size: 1.4em;
   position: absolute;
   left: 0;
@@ -11,19 +14,23 @@
   text-align: center;
   margin-left: -22px;
   padding: 1px 0;
-}
+}*/
 .affordable {
-  color: $color-moneypark-green;
+  //color: $color-moneypark-green;
+  background: $color-moneypark-green;
 }
 .not-affordable {
-  color: $color-homegate-red;
+  //color: $color-homegate-red;
+  background: $color-homegate-red;
 }
 
-.test {
+.affordability-value-img {
   position: absolute;
   //background-color: rgb(120, 158, 86);
   width: 100%;
+  box-sizing: border-box;
+  font-size: 1.1em;
   text-align: left;
-  padding: 0 2%;
+  padding: 2px 2%;
   color: rgb(255, 255, 255);
 }
