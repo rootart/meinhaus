@@ -2,30 +2,24 @@
 	<section id="two" >
 		<h2 class="sub-title">Suggested properties</h2>
 
-		<!--<div class="wipe wipe-left">-->
-		<!--<div class="wipe-default">-->
-		<!--test-->
-		<!--</div>-->
-		<!--<div class="wipe-show">-->
-		<!--<span>test1</span>-->
-		<!--</div>-->
-		<!--</div>-->
-
 		<div class="row">
 			<article ng-repeat="propObj in prop.items" class="6u 12u$(xsmall) work-item">
 				<a
 						ui-sref="properties.detail({'propId': propObj.advertismentId})"
 						class="image fit thumb">
 					<div class="affordability-value-img" ng-class="{affordable : calculateAffordability(propObj) <= 33, noaffordable : calculateAffordability(propObj) > 33 }">
-						<span>Affordability = </span>
-			  <span>
-				  <span ng-bind="calculateAffordability(propObj)"></span><i class="percent">%</i>
-			  </span>
+						<i class="fa fa-home home-icon"></i>
+						<div class="affordability-value">
+							<span>Affordability = </span>
+							<span class="affordability-common-value">
+								<span ng-bind="calculateAffordability(propObj)"></span><i class="percent">%</i>
+							</span>
+						</div>
 					</div>
 					<!--<span class="affordability-value-img affordable" ng-class="">33%</span>-->
 					<img ng-src="{[ propObj.pictures[0] ]}" alt="">
 					<div class="desc">
-						<p class="address">{[ propObj.zip ]} {[ propObj.city ]}, {[ propObj.countryLabel ]}</p>
+						<p class="address">{[ propObj.propertyStreet ]} CHF {[ propObj.sellingPrice ]}  <!--{[ propObj.zip ]} {[ propObj.city ]}--> <!--, {[ propObj.countryLabel ]}--></p>
 					</div>
 				</a>
 

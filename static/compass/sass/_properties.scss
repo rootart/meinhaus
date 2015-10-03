@@ -1,5 +1,6 @@
 .image {
   border-radius: 2px;
+  margin-top: 1em;
   img {
     border-radius: 2px;
   }
@@ -32,12 +33,39 @@
   padding: 1px 0;
 }*/
 .affordable {
-  //color: $color-moneypark-green;
-  background: $color-moneypark-green;
+  color: $color-moneypark-green;
+  //background: $color-moneypark-green;
+
+  .home-icon {
+    color: $color-moneypark-green;
+  }
+  .affordability-common-value {
+    color: $color-moneypark-green;
+  }
 }
 .noaffordable {
-  //color: $color-homegate-red;
-  background: $color-homegate-red;
+  color: $color-homegate-red;
+  //background: $color-homegate-red;
+  .home-icon {
+    color: $color-homegate-red;
+  }
+  .affordability-common-value {
+    color: $color-homegate-red;
+  }
+}
+.home-icon {
+  font-size: 1.5em !important;
+  margin-left: -1.2em;
+
+  vertical-align: middle;
+}
+.affordability-value {
+  display: inline-block;
+  vertical-align: middle;
+
+  > span {
+    color: $color-font;
+  }
 }
 
 .affordability-value-img {
@@ -48,7 +76,10 @@
   font-size: 1.1em;
   text-align: left;
   padding: 2px 2%;
-  color: rgb(255, 255, 255);
+  //color: rgb(255, 255, 255);
+
+  margin-top: -28px;
+  color: $color-font
 }
 .percent {
   display: inline-block;

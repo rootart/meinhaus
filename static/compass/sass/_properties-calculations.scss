@@ -17,4 +17,13 @@
 .property-content {
   position: relative;
   padding-bottom: 60px;
+
+  .row > * {
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+  }
+  .image {
+    margin-bottom: 0.5em;
+  }
 }

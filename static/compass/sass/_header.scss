@@ -21,7 +21,7 @@
   color: $color-font;
   //border-right: 2px dotted $color-border;
 
-  padding: 0.1em 1.5em 3em 1.5em !important;
+  padding: 1em 1.5em 3em 1.5em !important;
 
   box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
 
@@ -45,11 +45,11 @@
 
   display: none;
 }
-.home-icon {
-  font-size: 2em !important;
-  color: $color-moneypark-green;
-  margin: 0 0.1em 0 0;
-
-  display: inline-block;
-  vertical-align: middle;
-}
+//.home-icon {
+//  font-size: 2em !important;
+//  color: $color-moneypark-green;
+//  margin: 0 0.1em 0 0;
+//
+//  display: inline-block;
+//  vertical-align: middle;
+//}
