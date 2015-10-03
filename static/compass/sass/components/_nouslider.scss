@@ -3,7 +3,9 @@
   padding-bottom: 35px;
   .currency {
     font-size: 0.9em;
-    color: $color-font;
+    //color: $color-font;
+    color: $color-link;
+    text-shadow: 1px 1px 1px #fff;
   }
 }
 .scale-start,
@@ -11,7 +13,9 @@
   position: absolute;
   bottom: 0;
   font-size: 1.1em;
-  color: $color-font;
+  //color: $color-font;
+  color: $color-link;
+  text-shadow: 1px 1px 1px #fff;
 }
 .scale-start {
   left: 0;

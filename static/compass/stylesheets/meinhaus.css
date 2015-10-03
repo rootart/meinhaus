@@ -1,4 +1,4 @@
-/* line 7, ../sass/_constants.scss */
+/* line 8, ../sass/_constants.scss */
 .background-gradient-green, .noUi-base {
   background: #789e56;
   background: -moz-linear-gradient(top, #789e56 0, #789e56 25%, #698a4b);
@@ -51,11 +51,11 @@
 
 /* line 2, ../sass/_customer-details.scss */
 .customer-details label {
-  font-size: 1em;
-  margin-bottom: 0.7em;
+  font-size: 1.1em;
+  margin-bottom: 0.6em;
   color: #494d41;
 }
-/* line 8, ../sass/_customer-details.scss */
+/* line 9, ../sass/_customer-details.scss */
 .customer-details .form-control {
   background: #fff;
   border: 1px solid lightgray;
@@ -89,6 +89,15 @@
   color: #e63232;
 }
 
+/* line 22, ../sass/_properties.scss */
+.test {
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  padding: 0 2%;
+  color: white;
+}
+
 /* line 1, ../sass/_main-content.scss */
 .main-content {
   padding-top: 1.5em !important;
@@ -102,46 +111,48 @@
 /* line 4, ../sass/components/_nouslider.scss */
 .slider-container .currency {
   font-size: 0.9em;
-  color: #494d41;
+  color: #979b91;
+  text-shadow: 1px 1px 1px #fff;
 }
 
-/* line 9, ../sass/components/_nouslider.scss */
+/* line 11, ../sass/components/_nouslider.scss */
 .scale-start,
 .scale-end {
   position: absolute;
   bottom: 0;
   font-size: 1.1em;
-  color: #494d41;
+  color: #979b91;
+  text-shadow: 1px 1px 1px #fff;
 }
 
-/* line 16, ../sass/components/_nouslider.scss */
+/* line 20, ../sass/components/_nouslider.scss */
 .scale-start {
   left: 0;
 }
 
-/* line 19, ../sass/components/_nouslider.scss */
+/* line 23, ../sass/components/_nouslider.scss */
 .scale-end {
   right: 0;
 }
 
-/* line 24, ../sass/components/_nouslider.scss */
+/* line 28, ../sass/components/_nouslider.scss */
 .noUi-target {
   border-radius: 12px;
 }
 
-/* line 27, ../sass/components/_nouslider.scss */
+/* line 31, ../sass/components/_nouslider.scss */
 .noUi-origin {
   background: #fff;
   border-radius: 12px;
 }
 
-/* line 34, ../sass/components/_nouslider.scss */
+/* line 38, ../sass/components/_nouslider.scss */
 .noUi-base {
   cursor: pointer;
   border-radius: 12px;
 }
 
-/* line 40, ../sass/components/_nouslider.scss */
+/* line 44, ../sass/components/_nouslider.scss */
 .noUi-horizontal .noUi-handle {
   width: 28px;
   height: 28px;
@@ -149,34 +160,34 @@
   top: -10px;
 }
 
-/* line 46, ../sass/components/_nouslider.scss */
+/* line 50, ../sass/components/_nouslider.scss */
 .noUi-horizontal {
   height: 12px;
 }
 
-/* line 49, ../sass/components/_nouslider.scss */
+/* line 53, ../sass/components/_nouslider.scss */
 .noUi-handle {
   cursor: pointer;
   border-radius: 100%;
   transition: all 0.1s linear;
 }
-/* line 54, ../sass/components/_nouslider.scss */
+/* line 58, ../sass/components/_nouslider.scss */
 .noUi-handle.noUi-active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 60, ../sass/components/_nouslider.scss */
+/* line 64, ../sass/components/_nouslider.scss */
 .noUi-handle:not([disabled]):hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 64, ../sass/components/_nouslider.scss */
+/* line 68, ../sass/components/_nouslider.scss */
 .noUi-handle:before {
   background: #789e56;
   left: 10px;
   top: 6px;
 }
-/* line 69, ../sass/components/_nouslider.scss */
+/* line 73, ../sass/components/_nouslider.scss */
 .noUi-handle:after {
   background: #789e56;
   top: 6px;
