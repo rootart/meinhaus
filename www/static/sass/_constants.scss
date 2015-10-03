@@ -1,0 +1,15 @@
+$color-moneypark-green: rgb(120, 158, 86);
+$color-homegate-red: rgb(230, 50, 50);
+$color-yellow: rgb(253, 188, 85);
+$color-font: rgb(73, 77, 65);
+$color-border: rgb(239, 239, 239);
+
+.background-gradient-green {
+  background: $color-moneypark-green;
+  background: -moz-linear-gradient(top,#789e56 0,#789e56 25%,#698a4b);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgb(120, 158, 86)),color-stop(0.25,rgb(120, 158, 86)),color-stop(100%,rgb(105, 138, 75)));
+  background: -webkit-linear-gradient(top,rgb(120, 158, 86) 0,rgb(120, 158, 86) 25%,rgb(105, 138, 75) 100%);
+  background: -o-linear-gradient(top,#789e56 0,#789e56 25%,#698a4b 100%);
+  background: -ms-linear-gradient(top,#789e56 0,#789e56 25%,#698a4b 100%);
+  background: linear-gradient(to bottom,rgb(120, 158, 86) 0,rgb(120, 158, 86) 25%,rgb(105, 138, 75) 100%);
+}

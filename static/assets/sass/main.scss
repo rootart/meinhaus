@@ -897,18 +897,18 @@
 /* Header */
 
 	#header {
-		background-color:		_palette(accent2, bg);
-		background-attachment:	scroll,								fixed;
-		background-image:		url('images/overlay.png'),			url('../../images/bg.jpg');
-		background-position:	top left,							top left;
-		background-repeat:		repeat,								no-repeat;
-		background-size:		auto,								auto 100%;
-		color: _palette(accent2, fg);
+		//background-color:		_palette(accent2, bg);
+		//background-attachment:	scroll,								fixed;
+		//background-image:		url('images/overlay.png'),			url('../../images/bg.jpg');
+		//background-position:	top left,							top left;
+		//background-repeat:		repeat,								no-repeat;
+		//background-size:		auto,								auto 100%;
+		//color: _palette(accent2, fg);
 		height: 100%;
 		left: 0;
 		padding: ($size-header-pad * 2) $size-header-pad 0 0;
 		position: fixed;
-		text-align: right;
+		//text-align: right;
 		top: 0;
 		width: $size-header-width;
 

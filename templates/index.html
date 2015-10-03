@@ -1,10 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html ng-app="MH">
+<html ng-app="MH" lang="en">
 	<head>
 		<title>Strata by HTML5 UP</title>
 		<meta charset="utf-8" />
@@ -13,7 +8,7 @@
 		<link rel="stylesheet" href="{{ url_for('static', filename='bower_components/bootstrap/dist/css/bootstrap.css') }}">
 
 		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}">
-		<link rel="stylesheet" href="{{ url_for('static', filename='compass/stylesheets/meinhaus.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/meinhaus.css') }}">
 		<!--components-->
 		<link rel="stylesheet" href="{{ url_for('static', filename='bower_components/nouislider/jquery.nouislider.css') }}">
 
@@ -24,7 +19,7 @@
 	<body id="top" ng-controller="GlobalCtrl">
 
 		<!-- Header -->
-			<header id="header">
+			<header id="header" class="header">
 
 				<div class="customer-details">
 					<div>
@@ -34,7 +29,11 @@
 					<form action="">
 						<div class="form-group">
 							<label>Price</label>
-							<div slider ng-model="test.single" start=1 end=10></div>
+							<div class="slider-container">
+								<div slider ng-model="test.single" start=1 end=10></div>
+								<span class="scale-start"><span class="currency">CHF</span> 1</span>
+								<span class="scale-end"><span class="currency">CHF</span> 5 000 000</span>
+							</div>
 						</div>
 						<div class="form-group">
 							<label>Salary</label>
@@ -50,12 +49,14 @@
 						</div>
 					</form>
 				</div>
-
+				
 
 			</header>
 
 		<!-- Main -->
 			<div id="main">
+
+
 
 				<!-- One -->
 					<section id="one">
