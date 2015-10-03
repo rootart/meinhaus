@@ -9,14 +9,43 @@
 
 		<link rel="stylesheet" href="assets/css/main.css">
 		<link rel="stylesheet" href="static/stylesheets/meinhaus.css">
+		<!--components-->
+		<link rel="stylesheet" href="bower_components/nouislider/jquery.nouislider.css">
 
 
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	</head>
 	<body id="top">
+
 		<!-- Header -->
 			<header id="header">
+
+				<div class="customer-details">
+					<div>
+						test
+						<i class="fa fa-home"></i>
+					</div>
+					<form action="">
+						<div class="form-group">
+							<label>Price</label>
+							<div slider ng-model="test.single" start=1 end=10></div>
+						</div>
+						<div class="form-group">
+							<label>Salary</label>
+							<!--<div slider ng-model="test.single" start=1 end=10></div>-->
+						</div>
+						<div class="form-group">
+							<label>Assets</label>
+							<!--<div slider ng-model="test.single" start=1 end=10></div>-->
+						</div>
+						<div class="form-group">
+							<label for="customer_age">Age</label>
+							<input type="text" class="form-control" id="customer_age" placeholder="Age">
+						</div>
+					</form>
+				</div>
+				
         <div class="input-placeholder"><input type="text" placeholder="Zip code"/></div>
         <div class="input-placeholder"><input type="text" placeholder="Salary"/></div>
         <div class="input-placeholder"><input type="text" placeholder="Assets"/></div>
@@ -27,19 +56,7 @@
 		<!-- Main -->
 			<div id="main">
 
-				<section>
-					<form action="">
-						<div class="form-group">
-							<label>Price</label>
-							<div class="test">test</div>
-						</div>
-						<div class="form-group">
-							<label for="exampleInputEmail1">Email address</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-						</div>
-					</form>
 
-				</section>
 
 				<!-- One -->
 					<section id="one">
@@ -436,13 +453,17 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-    <script src="bower_components/angular/angular.min.js"></script>
+
+	<script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/lodash/lodash.min.js"></script>
     <script src="bower_components/ui-router/release/angular-ui-router.min.js"></script>
 
     <script src="assets/js/angular-app.js"></script>
-     <script src="assets/js/controllers/propertiesCtrl.js"></script>
+	<script src="assets/js/controllers/propertiesCtrl.js"></script>
+	<!--directives -->
+	<script src="bower_components/nouislider/jquery.nouislider.js"></script>
+	<script src="bower_components/nouislider/Link.js"></script>
+	<script src="bower_components/angular-nouislider/src/nouislider.js"></script>
 
-		    <script src="bower_components/angular/angular.js"></script>
 	</body>
 </html>

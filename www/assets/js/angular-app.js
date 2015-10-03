@@ -1,4 +1,7 @@
-var MH = angular.module('MH', ['ui.router']);
+var MH = angular.module('MH', [
+  'ui.router',
+  'nouislider'
+]);
 
 MH.config(function($stateProvider, $urlRouterProvider) {
 
