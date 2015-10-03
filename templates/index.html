@@ -1,13 +1,18 @@
 <!DOCTYPE HTML>
-<html ng-app="MH" lang="en">
+<!--
+	Strata by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html ng-app="MH">
 	<head>
 		<title>Strata by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
-		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="{{ url_for('static', filename='bower_components/normalize-css/normalize.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='bower_components/bootstrap/dist/css/bootstrap.css') }}">
 
-		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}">
 		<link rel="stylesheet" href="static/stylesheets/meinhaus.css">
 		<!--components-->
 		<link rel="stylesheet" href="bower_components/nouislider/jquery.nouislider.css">
@@ -16,7 +21,7 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	</head>
-	<body id="top">
+	<body id="top" ng-controller="GlobalCtrl">
 
 		<!-- Header -->
 			<header id="header">
@@ -45,18 +50,12 @@
 						</div>
 					</form>
 				</div>
-				
-        <div class="input-placeholder"><input type="text" placeholder="Zip code"/></div>
-        <div class="input-placeholder"><input type="text" placeholder="Salary"/></div>
-        <div class="input-placeholder"><input type="text" placeholder="Assets"/></div>
-        <div class="input-placeholder"><input type="text" placeholder="Age"/></div>
+
 
 			</header>
 
 		<!-- Main -->
 			<div id="main">
-
-
 
 				<!-- One -->
 					<section id="one">
@@ -447,17 +446,22 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="../static/assets/js/jquery.min.js"></script>
+			<script src="../static/assets/js/jquery.poptrox.min.js"></script>
+			<script src="../static/assets/js/skel.min.js"></script>
+			<script src="../static/assets/js/util.js"></script>
+			<!--[if lte IE 8]>
+    <script src="../static/assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../static/assets/js/main.js"></script>
+    <script src="../static/bower_components/angular/angular.min.js"></script>
+    <script src="../static/bower_components/lodash/lodash.min.js"></script>
+    <script src="../static/bower_components/ui-router/release/angular-ui-router.min.js"></script>
+    <script src="../static/bower_components/angular-resource/angular-resource.min.js"></script>
 
-	<script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/lodash/lodash.min.js"></script>
-    <script src="bower_components/ui-router/release/angular-ui-router.min.js"></script>
-
+    <script src="../static/assets/js/angular-app.js"></script>
+     <script src="../static/assets/js/controllers/propertiesCtrl.js"></script>
+    <script src="../static/assets/js/controllers/globalCtrl.js"></script>
+    <script src="../static/assets/js/services/propertiesService.js"></script>
     <script src="assets/js/angular-app.js"></script>
 	<script src="assets/js/controllers/propertiesCtrl.js"></script>
 	<!--directives -->

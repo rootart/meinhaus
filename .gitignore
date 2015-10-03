@@ -1,5 +1,5 @@
 *.pyc
-www/bower_components/
 .DS_Store
+static/bower_components/
 .idea/
 .sass-cache/

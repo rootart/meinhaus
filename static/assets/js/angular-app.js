@@ -1,6 +1,7 @@
 var MH = angular.module('MH', [
   'ui.router',
-  'nouislider'
+  'nouislider',
+  'ngResource'
 ]);
 
 MH.config(function($stateProvider, $urlRouterProvider) {
@@ -10,16 +11,16 @@ MH.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state("properties", {
         url: "/properties",
-        templateUrl: "../../partials/properties.html",
+        templateUrl: "/static/partials/properties.html",
         controller: 'PropertiesCtrl'
       }
     )
     .state('properties.filter', {
       url: "/properties/filter",
-      templateUrl: "../../partials/filter-results.html"
+      templateUrl: "/static/partials/filter-results.html"
     })
     .state('properties.detail', {
       url: "/list",
-      templateUrl: "../../partials/property-detail.html"
+      templateUrl: "/static/partials/property-detail.html"
     })
 });
