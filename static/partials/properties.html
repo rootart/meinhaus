@@ -6,11 +6,11 @@
           ui-sref="properties.detail({'propId': propObj.advertismentId})"
           class="image fit thumb">
         <span class="affordability-value-img affordable" ng-class="">33%</span>
-        <img ng-src="{{ propObj.pictures[0] }}" alt="" />
+        <img ng-src="{[ propObj.pictures[0] ]}" alt="" />
       </a>
 
-      <h3>{{ propObj.title }}</h3>
-      <p>{{ propObj.zip }} {{ propObj.city }}, {{ propObj.countryLabel }}</p>
+      <h3>{[ propObj.title ]}</h3>
+      <p>{[ propObj.zip ]} {[ propObj.city ]}, {[ propObj.countryLabel ]}</p>
     </article>
   </div>
   <div ui-view></div>

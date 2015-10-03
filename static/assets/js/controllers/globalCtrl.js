@@ -6,6 +6,9 @@
 
       function GlobalCtrl($scope, $log, PropertiesService){
           $scope.prop = {};
+          $scope.filters = {
+            price: 1000000
+          };
           $log.info('Init global ctrl...');
           var props = PropertiesService.query(function(data){
               $log.info(data);

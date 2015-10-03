@@ -4,6 +4,11 @@ var MH = angular.module('MH', [
   'ngResource'
 ]);
 
+MH.config(['$interpolateProvider', function($interpolateProvider) {
+  $interpolateProvider.startSymbol('{[');
+  $interpolateProvider.endSymbol(']}');
+}]);
+
 MH.config(function($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.otherwise("/properties");
