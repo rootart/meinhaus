@@ -90,10 +90,15 @@
   text-align: left;
   position: absolute;
   bottom: 0;
-  padding: 2px;
+  padding: 2px 2%;
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0.1);
   color: #fff;
+  font-size: 1em;
+  width: 100%;
+}
+/* line 19, ../sass/_properties.scss */
+.image .address {
   font-size: 0.85em;
 }
 
@@ -108,17 +113,17 @@
   margin-left: -22px;
   padding: 1px 0;
 }*/
-/* line 30, ../sass/_properties.scss */
+/* line 34, ../sass/_properties.scss */
 .affordable {
   background: #789e56;
 }
 
-/* line 34, ../sass/_properties.scss */
+/* line 38, ../sass/_properties.scss */
 .noaffordable {
   background: #e63232;
 }
 
-/* line 39, ../sass/_properties.scss */
+/* line 43, ../sass/_properties.scss */
 .affordability-value-img {
   position: absolute;
   width: 100%;
@@ -129,7 +134,7 @@
   color: white;
 }
 
-/* line 49, ../sass/_properties.scss */
+/* line 53, ../sass/_properties.scss */
 .percent {
   display: inline-block;
   vertical-align: top;
@@ -258,6 +263,25 @@ body {
   text-align: center;
   text-transform: uppercase;
   transform: translate(-50%, -50%);
+}
+
+/* line 1, ../sass/_properties-calculations.scss */
+.property-calculations {
+  position: fixed;
+  bottom: 0;
+  right: 3em;
+  left: 33.8%;
+  background-color: whitesmoke;
+}
+/* line 12, ../sass/_properties-calculations.scss */
+.property-calculations .wrap {
+  padding: 0.5em 1.5em;
+}
+
+/* line 17, ../sass/_properties-calculations.scss */
+.property-content {
+  position: relative;
+  padding-bottom: 60px;
 }
 
 /* line 1, ../sass/components/_nouslider.scss */

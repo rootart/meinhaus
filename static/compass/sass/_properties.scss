@@ -8,11 +8,15 @@
     text-align: left;
     position: absolute;
     bottom: 0;
-    padding: 2px;
+    padding: 2px 2%;
     box-sizing: border-box;
 
     background: rgba(#000, 0.1);
     color: #fff;
+    font-size: 1em;
+    width: 100%;
+  }
+  .address {
     font-size: 0.85em;
   }
 }
