@@ -1,0 +1,22 @@
+{
+  "name": "meinhaus",
+  "version": "0.0.1",
+  "homepage": "https://github.com/rootart/meinhaus",
+  "authors": [
+    "Vasyl Dizhak <dijakroot@gmail.com>"
+  ],
+  "description": "Affordability property selector",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "lodash": "~3.10.1",
+    "jquery": "~2.1.4"
+  }
+}
